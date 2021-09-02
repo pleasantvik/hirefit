@@ -17,6 +17,19 @@
     0 0,
     19% 0
   );
+
+  @media only screen and (max-width: $bp-large) {
+    background-color: $color-grey-light-1;
+    height: 40vh;
+
+    // grid-column: full-start / full-end;
+    // padding: 1.8rem 2rem;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    // grid-gap: 6rem;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
 }
 
 .work {
