@@ -1,0 +1,37 @@
+// .story {
+//   &__pictures {
+//     background-color: yellow;
+//     grid-column: full-start / col-end 4;
+//   }
+
+//   &__content {
+//     background-color: green;
+//     grid-column: col-start 5 / full-end;
+//   }
+// }
+.story__pictures {
+  grid-column: center-start/center-end;
+}
+
+.story {
+  grid-column: center-start/center-end;
+  margin: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-template-columns: repeat(auto-fit, minmax(60vw, 1fr));
+  // grid-template-rows: repeat(2, 1fr);
+  grid-gap: 6rem;
+  // align-items: start;
+
+  &__img {
+    width: 20%;
+    height: 20%;
+  }
+}
+
+.story__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

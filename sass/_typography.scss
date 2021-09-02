@@ -1,0 +1,71 @@
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+  color: $color-primary;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: $color-primary;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 2rem;
+  }
+}
+.heading-2 {
+  @extend %heading;
+}
+.heading-3 {
+  @extend %heading;
+}
+.heading-4 {
+  @extend %heading;
+  font-size: 3rem;
+  margin-left: 2rem;
+
+  &--light {
+    color: $color-grey-light-1;
+  }
+  &--dark {
+    color: $color-primary;
+  }
+}
+
+.btn {
+  background-color: $color-orange;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
+  font-size: 2.5rem;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transform: all 0.2s;
+
+  @media only screen and (max-width: $bp-large) {
+    margin-bottom: 3rem;
+  }
+
+  &:hover {
+    background-color: transparent;
+
+    color: $color-orange;
+    border: 2px solid $color-orange;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+.mb-md {
+  margin-bottom: 4rem;
+}
+.mt-sm {
+  margin-top: -10rem;
+}
+.mt-md {
+  margin-top: 10rem;
+}
